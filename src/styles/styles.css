@@ -226,6 +226,7 @@ header {
 .portrait-container {
   width: 100%;
   max-width: 300px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -241,4 +242,11 @@ the 300px or 500px dimensions of it's parent container now */
   height: auto;
 
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.46);
+}
+
+/* Portrait text overlay */
+.portrait-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
