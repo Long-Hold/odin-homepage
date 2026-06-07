@@ -212,12 +212,14 @@ summary {
 ====
 MY STYLES
 ==== */
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+body {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+header {
+  background-color: rgb(134, 0, 0);
+  background: linear-gradient(to bottom right, rgb(134, 0, 0) 50%, transparent 50%);
 }
 
 /* Portrait sizing rules */
@@ -237,4 +239,6 @@ the 300px or 500px dimensions of it's parent container now */
 .portrait {
   width: 100%;
   height: auto;
+
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.46);
 }
