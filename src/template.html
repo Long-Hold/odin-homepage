@@ -12,11 +12,18 @@
     <header>
       <div class="portrait-container">
         <img
-        srcset="./assets/portraits/portrait_1000x1000.webp 1x, ./assets/portraits/portrait_2000x2000.webp 2x"
-        src="./assets/portraits/portrait_1000x1000.webp" 
-        alt="Matthew" class="portrait"
+        class="portrait"
         width="500"
-        height="500">
+        height="500"
+        srcset="
+          ./assets/portraits/portrait_300x300.webp 300w,
+          ./assets/portraits/portrait_600x600.webp 600w,
+          ./assets/portraits/portrait_1000x1000.webp 1000w
+        "
+        sizes="(min-width: 768px) 500px, 300px"
+        src="./assets/portraits/portrait_1000x1000.webp"
+        alt="Matthew"
+        >
       </div>
     </header>
   </body>

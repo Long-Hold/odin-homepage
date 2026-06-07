@@ -219,3 +219,22 @@ svg {
   width: 100%;
   z-index: -1;
 }
+
+/* Portrait sizing rules */
+.portrait-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .portrait-container {
+    max-width: 500px;
+  }
+}
+
+/* The portrait itself (an img element) will match
+the 300px or 500px dimensions of it's parent container now */
+.portrait {
+  width: 100%;
+  height: auto;
+}
