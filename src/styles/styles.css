@@ -219,8 +219,13 @@ Elements that have default stylings remove
 ==== */
 :root {
   --header-margin: 1.5rem 0 0.5rem 0;
+  --container-padding: 0.2rem 0.5rem;
+
   --transparent-black: rgb(0, 0, 0, 0.45);
   --background-red: rgb(134, 0, 0);
+  --background-dark-grey: rgb(40,40,40);
+
+  --custom-box-shadow: 4px 4px 4px var(--transparent-black);
 }
 
 figure,
@@ -235,7 +240,7 @@ li {
 }
 
 body {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--background-dark-grey);
   color: white;
   line-height: 1.5;
 }
@@ -255,7 +260,7 @@ End of Default styling removal
 ==== */
 
 header {
-  background-color: rgb(134, 0, 0);
+  background-color: var(--background-red);
   background: linear-gradient(to bottom right, var(--background-red) 50%, transparent 50%);
   place-items: center;
   padding: 1rem;
@@ -267,7 +272,7 @@ header {
   max-width: 300px;
   position: relative;
   text-align: center;
-  box-shadow: 4px 4px 5px var(--transparent-black);
+  box-shadow: var(--custom-box-shadow);
 }
 
 @media screen and (min-width: 768px) {
@@ -291,4 +296,27 @@ the 300px or 500px dimensions of it's parent container now */
   left: 0;
   font-size: 2rem;
   background-color: var(--transparent-black);
+}
+
+/* Social Media icons */
+.social-links {
+  ul {
+    display: flex;
+    place-content: center;
+  }
+  a {
+    position: relative;
+    height: fit-content
+  }
+  svg, a{
+    width: 4rem;
+    aspect-ratio: 1/1;
+  }
+}
+
+/* Container for social about me + social media */
+#blurb-and-links {
+  padding: var(--container-padding);
+  background-color: var(--background-dark-grey);
+  box-shadow: var(--custom-box-shadow);
 }
