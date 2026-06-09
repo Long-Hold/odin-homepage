@@ -264,6 +264,10 @@ header {
   background: linear-gradient(to bottom right, var(--background-red) 50%, transparent 50%);
   place-items: center;
   padding: 1rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 
 /* Portrait sizing rules */
