@@ -217,19 +217,48 @@ MY STYLES
 ====
 Elements that have default stylings remove
 ==== */
-figure {
+:root {
+  --header-margin: 1.5rem 0 0.5rem 0;
+  --transparent-black: rgb(0, 0, 0, 0.45);
+  --background-red: rgb(134, 0, 0);
+}
+
+figure,
+h1,
+p,
+ul,
+ol,
+li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 body {
   background-color: rgb(40, 40, 40);
   color: white;
+  line-height: 1.5;
 }
+
+h1 {
+  text-align: center;
+  margin: var(--header-margin);
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    text-align: left;
+  }
+}
+/* 
+====
+End of Default styling removal
+==== */
 
 header {
   background-color: rgb(134, 0, 0);
-  background: linear-gradient(to bottom right, rgb(134, 0, 0) 50%, transparent 50%);
+  background: linear-gradient(to bottom right, var(--background-red) 50%, transparent 50%);
+  place-items: center;
+  padding: 1rem;
 }
 
 /* Portrait sizing rules */
@@ -238,7 +267,7 @@ header {
   max-width: 300px;
   position: relative;
   text-align: center;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.46);
+  box-shadow: 4px 4px 5px var(--transparent-black);
 }
 
 @media screen and (min-width: 768px) {
@@ -261,5 +290,5 @@ the 300px or 500px dimensions of it's parent container now */
   bottom: 0;
   left: 0;
   font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.46);
+  background-color: var(--transparent-black);
 }
