@@ -281,7 +281,7 @@ header, #blurb-and-links {
   box-shadow: var(--custom-box-shadow);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .portrait-container {
     max-width: 500px;
   }
@@ -327,8 +327,39 @@ the 300px or 500px dimensions of it's parent container now */
   background-color: var(--background-dark-grey);
   box-shadow: var(--custom-box-shadow);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 37.5rem) {
   #blurb-and-links {
     background-color: var(--transparent-black);
+  }
+}
+
+/* Tablet only styling for header */
+@media screen and (width >= 37.5rem) and (width < 64rem) {
+  header {
+    padding: 6rem;
+  }
+  header, #blurb-and-links {
+    display: block;
+  }
+  .about-me-container {
+    margin-top: 6rem;
+  }
+
+  .social-links ul {
+    justify-content: end;
+  }
+
+  .portrait-container {
+    box-shadow: none;
+    margin-right: auto;
+
+    .portrait {
+      float: left;
+    }
+
+    figcaption {
+      translate: 50px 50px;
+      background: none;
+    }
   }
 }
