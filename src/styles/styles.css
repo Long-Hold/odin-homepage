@@ -341,25 +341,22 @@ the 300px or 500px dimensions of it's parent container now */
   header, #blurb-and-links {
     display: block;
   }
-  .about-me-container {
-    margin-top: 6rem;
-  }
 
   .social-links ul {
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .portrait-container {
     box-shadow: none;
-    margin-right: auto;
-
-    .portrait {
-      float: left;
-    }
-
+    float: left;
+    margin-left: -3rem;
+    margin-top: -3rem;
+    margin-right: 2rem;
+    
     figcaption {
-      translate: 50px 50px;
       background: none;
+      top: 0;
+      margin-left: 12rem;
     }
   }
 }
