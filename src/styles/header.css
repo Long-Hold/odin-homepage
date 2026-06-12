@@ -1,0 +1,101 @@
+header {
+  background-color: var(--background-red);
+  background: linear-gradient(to bottom right, var(--background-red) 50%, transparent 50%);
+  place-items: center;
+  padding: 1rem;
+}
+
+header, #blurb-and-links {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+/* Portrait sizing rules */
+.portrait-container {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  text-align: center;
+  box-shadow: var(--custom-box-shadow);
+}
+
+@media screen and (min-width: 1024px) {
+  .portrait-container {
+    max-width: 500px;
+  }
+}
+
+/* The portrait itself (an img element) will match
+the 300px or 500px dimensions of it's parent container now */
+.portrait {
+  width: 100%;
+  height: auto;
+}
+
+/* Portrait text overlay */
+.portrait-container figcaption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2rem;
+  background-color: var(--transparent-black);
+}
+
+/* Social Media icons */
+.social-links {
+  ul {
+    display: flex;
+    place-content: center;
+    gap: 1rem;
+  }
+  a {
+    position: relative;
+    height: fit-content
+  }
+  svg, a{
+    width: 3.5rem;
+    aspect-ratio: 1/1;
+  }
+}
+
+/* Container for social about me + social media */
+#blurb-and-links {
+  padding: var(--container-padding);
+  background-color: var(--background-dark-grey);
+  box-shadow: var(--custom-box-shadow);
+}
+@media screen and (min-width: 37.5rem) {
+  #blurb-and-links {
+    background-color: var(--transparent-black);
+  }
+}
+
+/* Tablet only styling for header */
+@media screen and (width >= 37.5rem) and (width < 64rem) {
+  header {
+    padding: 6rem;
+  }
+  header, #blurb-and-links {
+    display: block;
+  }
+
+  .social-links ul {
+    justify-content: flex-end;
+  }
+
+  .portrait-container {
+    box-shadow: none;
+    float: left;
+    margin-left: -3rem;
+    margin-top: -3rem;
+    margin-right: 2rem;
+    
+    figcaption {
+      background: none;
+      top: 0;
+      margin-left: 12rem;
+    }
+  }
+}

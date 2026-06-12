@@ -1,0 +1,10 @@
+:root {
+  --header-margin: 1.5rem 0 0.5rem 0;
+  --container-padding: 0.2rem 0.5rem;
+
+  --transparent-black: rgb(0, 0, 0, 0.45);
+  --background-red: rgb(134, 0, 0);
+  --background-dark-grey: rgb(40,40,40);
+
+  --custom-box-shadow: 4px 4px 4px var(--transparent-black);
+}
