@@ -1,4 +1,11 @@
 :root {
+	/* == BREAKPOINTS ==
+		desktop: 64rem
+		tablet: 37.5rem
+
+		CSS VARS CANNOT BE USED IN MEDIA QUERIES
+	*/
+
   --header-margin: 1.5rem 0 0.5rem 0;
   --container-padding: 0.2rem 0.5rem;
 

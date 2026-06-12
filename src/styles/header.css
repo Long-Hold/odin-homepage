@@ -20,7 +20,7 @@ header, #blurb-and-links {
   box-shadow: var(--custom-box-shadow);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   .portrait-container {
     max-width: 500px;
   }
