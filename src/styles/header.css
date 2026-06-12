@@ -99,3 +99,19 @@ the 300px or 500px dimensions of it's parent container now */
     }
   }
 }
+
+/* Desktop only styling */
+@media screen and (min-width: 64rem) {
+  header {
+    flex-flow: row nowrap;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  #blurb-and-links {
+    width: min(50%, 60ch);
+  }
+  .social-links ul {
+    justify-content: flex-end;
+  }
+}
