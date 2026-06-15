@@ -59,7 +59,6 @@ the 300px or 500px dimensions of it's parent container now */
   }
   svg, a{
     width: 3.5rem;
-    aspect-ratio: 1/1;
   }
 }
 
