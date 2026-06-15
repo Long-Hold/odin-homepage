@@ -42,7 +42,7 @@ the 300px or 500px dimensions of it's parent container now */
   font-size: 2rem;
   background-color: var(--transparent-black);
   white-space: nowrap;
-  overflow:scroll;
+  overflow:hidden;
   text-overflow: ellipsis;
 }
 
