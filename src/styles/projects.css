@@ -3,13 +3,18 @@ main, .projects-section {
     height: 100%;
 }
 
-.projects-section, .project-card {
+.projects-section, .project-details-container {
     display: grid;
     place-items: center;
 }
 
+.projects-section {
+    gap: 1.5rem;
+}
+
+/* Special SVG icon styling to ensure uniformity */
 .project-card {
-    svg, a {
+    svg {
         width: 2.5rem;
     }
 }
@@ -17,23 +22,31 @@ main, .projects-section {
 .project-card {
     text-align: left;
     max-width: 300px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    "thumbnail thumbnail"
-    "title links"
-    "description description";
 
-    .thumbnail {
-        grid-area: thumbnail;
+    box-shadow: 0 10px 10px 0 var(--transparent-black);
+
+    .project-details-container {
+        padding: 1rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "title links"
+        "description description";
     }
     h3 {
         grid-area: title;
+        place-self: start;
     }
     .project-links {
         grid-area: links;
+        place-self: end;
     }
     p {
         grid-area: description;
+    }
+
+    h3, p {
+        margin: 0;
+        padding: 0;
     }
 }
