@@ -252,6 +252,16 @@ h1 {
     text-align: left;
   }
 }
+
+/* Special general-use class to make block-level svg's stack horizontally */
+.icon-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* 
 ====
 End of Default styling removal

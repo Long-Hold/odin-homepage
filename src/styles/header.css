@@ -48,11 +48,6 @@ the 300px or 500px dimensions of it's parent container now */
 
 /* Social Media icons */
 .social-links {
-  ul {
-    display: flex;
-    place-content: center;
-    gap: 1rem;
-  }
   a {
     position: relative;
     height: fit-content
