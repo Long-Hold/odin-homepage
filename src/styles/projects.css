@@ -22,17 +22,23 @@ main, .projects-section {
 .project-card {
     text-align: left;
     max-width: 300px;
+    place-items: center;
 
-    box-shadow: 0 10px 10px 0 var(--transparent-black);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.355);
 
     .project-details-container {
-        padding: 1rem;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        width: 100%;
+        height: 12rem;
+        overflow: auto;
+        padding: var(--container-padding);
+
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto 1fr;
         grid-template-areas:
         "title links"
         "description description";
         background-color: var(--background-surface);
+        gap: 1rem;
     }
     h3 {
         grid-area: title;
@@ -40,10 +46,11 @@ main, .projects-section {
     }
     .project-links {
         grid-area: links;
-        place-self: end;
+        place-self: center end;
     }
     p {
         grid-area: description;
+        place-self: start;
     }
 
     h3, p {
