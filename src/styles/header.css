@@ -2,7 +2,6 @@ header {
   background-color: var(--background-red);
   background: linear-gradient(to bottom right, var(--background-red) 50%, transparent 50%);
   place-items: center;
-  padding: 1rem;
 }
 
 header, #blurb-and-links {

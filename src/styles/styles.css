@@ -242,6 +242,17 @@ body {
   color: white;
   line-height: 1.5;
 }
+@media screen and (width < 37.5rem){
+  body > * {
+    /* header portrait is 300px wide on mobile.
+    The smallest likely viewport is 320px wide.
+
+    0.625rem is 10px, which subtracts 20px total from the width,
+    this keeps content from touching the edges while providing enough room
+    for the portrait to expand. */
+    padding: 0.625rem;
+  }
+}
 
 h1 {
   text-align: center;
