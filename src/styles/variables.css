@@ -12,6 +12,7 @@
   --transparent-black: rgb(0, 0, 0, 0.45);
   --background-red: rgb(134, 0, 0);
   --background-dark-grey: rgb(40,40,40);
+  --background-surface: rgb(55,55,55);
 
   --custom-box-shadow: 4px 4px 4px var(--transparent-black);
 }

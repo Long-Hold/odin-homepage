@@ -15,7 +15,7 @@ main, .projects-section {
 /* Special SVG icon styling to ensure uniformity */
 .project-card {
     svg {
-        width: 2.5rem;
+        width: 1.5rem;
     }
 }
 
@@ -32,6 +32,7 @@ main, .projects-section {
         grid-template-areas:
         "title links"
         "description description";
+        background-color: var(--background-surface);
     }
     h3 {
         grid-area: title;

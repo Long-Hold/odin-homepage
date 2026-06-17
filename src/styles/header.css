@@ -60,7 +60,7 @@ the 300px or 500px dimensions of it's parent container now */
 /* Container for social about me + social media */
 #blurb-and-links {
   padding: var(--container-padding);
-  background-color: var(--background-dark-grey);
+  background-color: var(--background-surface);
   box-shadow: var(--custom-box-shadow);
 }
 @media screen and (min-width: 37.5rem) {
