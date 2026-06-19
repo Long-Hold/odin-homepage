@@ -241,6 +241,13 @@ body {
   background-color: var(--background-dark-grey);
   color: white;
   line-height: 1.5;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 4rem;
 }
 @media screen and (width < 37.5rem){
   body > * {
