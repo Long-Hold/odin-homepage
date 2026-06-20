@@ -9,7 +9,11 @@ main, .projects-section {
 }
 
 .projects-section {
-    gap: 1.5rem;
+    gap: 1rem;
+
+    #projects-heading {
+        margin: 0;
+    }
 }
 
 /* Special SVG icon styling to ensure uniformity */
