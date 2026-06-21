@@ -3,17 +3,18 @@ main, .projects-section {
     height: 100%;
 }
 
-.projects-section, .project-details-container {
+.cards-grid, .project-details-container {
     display: grid;
     place-items: center;
 }
 
-.projects-section {
-    gap: 1rem;
+.cards-grid {
+    gap: 4rem;
+}
 
-    #projects-heading {
-        margin: 0;
-    }
+#projects-heading {
+    margin: var(--header-margin);
+    text-align: center;
 }
 
 /* Special SVG icon styling to ensure uniformity */
