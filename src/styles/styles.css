@@ -249,7 +249,7 @@ body {
   flex-flow: column nowrap;
   gap: 4rem;
 }
-@media screen and (width < 37.5rem){
+@media screen and (width < 48rem){
   body > * {
     /* header portrait is 300px wide on mobile.
     The smallest likely viewport is 320px wide.
@@ -261,12 +261,12 @@ body {
   }
 }
 
-h1 {
+h1, h2, h3 {
   text-align: center;
   margin: var(--header-margin);
 }
-@media screen and (min-width: 1024px) {
-  h1 {
+@media screen and (min-width: 64rem) {
+  h1, h2, h3 {
     text-align: left;
   }
 }

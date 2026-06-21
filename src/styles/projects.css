@@ -12,11 +12,6 @@ main, .projects-section {
     gap: 4rem;
 }
 
-#projects-heading {
-    margin: var(--header-margin);
-    text-align: center;
-}
-
 /* Special SVG icon styling to ensure uniformity */
 .project-card {
     svg {
