@@ -11,6 +11,13 @@ main, .projects-section {
 .cards-grid {
     gap: 4rem;
 }
+/* Tablet 2 x 3 layout */
+@media screen and (width >= 48rem) and (width < 64rem) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
 
 /* Special SVG icon styling to ensure uniformity */
 .project-card {
