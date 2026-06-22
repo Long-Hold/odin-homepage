@@ -10,12 +10,12 @@ main, .projects-section {
 
 .cards-grid {
     gap: 4rem;
+    place-content: center;
 }
 /* Tablet 2 x 3 layout */
 @media screen and (width >= 48rem) and (width < 64rem) {
     .cards-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto auto;
     }
 }
 
