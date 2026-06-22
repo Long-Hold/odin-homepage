@@ -18,6 +18,18 @@ main, .projects-section {
         grid-template-columns: auto auto;
     }
 }
+/* Desktop 3x3 layout */
+@media screen  and (min-width: 64rem){
+    .projects-section {
+        /* Prevent stretching across very large viewport */
+        width: fit-content;
+        /* Centers content on screen, justify-self: center doesn't work on safari or firefox */
+        margin-inline: auto;
+    }
+    .cards-grid {
+        grid-template-columns: repeat(3, auto);
+    }
+}
 
 /* Special SVG icon styling to ensure uniformity */
 .project-card {
