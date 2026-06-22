@@ -282,5 +282,42 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div id="contact-info-container">
+        <h2 id="contact-heading">Contact Me</h2>
+        <p>Interested in working together? Send me an email with the form below!</p>
+        <form aria-labelledby="contact-heading" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b03e2aaa-b9d7-4093-bc74-eaa4e060c388">
+
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="John Smith" autocomplete="name" required>
+
+          <label for="email">Return Email:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com" autocomplete="email" required>
+
+          <label for="message">Your Message:</label>
+          <textarea name="message" id="message" placeholder="Enter message here..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <nav class="social-links" aria-label="Social media profiles">
+          <ul class="icon-links">
+            <li>
+              <a href="https://github.com/Long-Hold" target="_blank" rel="noopener noreferrer" aria-label="Github profile">
+                <svg aria-hidden="true" focusable="false">
+                  <use href="./assets/icons/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.upwork.com/freelancers/~0180b91b497b80f1a8?mp_source=share" target="_blank" rel="noopener noreferrer" aria-label="Upwork profile">
+                <svg aria-hidden="true" focusable="false">
+                  <use href="./assets/icons/sprite.svg#icon-upwork"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
