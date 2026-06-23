@@ -1,6 +1,9 @@
 header {
   background-color: var(--background-red);
-  background: linear-gradient(to bottom right, var(--background-red) 50%, transparent 50%);
+  background: linear-gradient(    
+    to bottom right,
+    var(--background-red) 50%,
+    var(--background-dark-grey) 50%);
   place-items: center;
 }
 
