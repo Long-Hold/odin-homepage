@@ -9,5 +9,40 @@ footer, .contact-form, .contact-form div {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+}
+
+.contact-form {
+    background-color: var(--transparent-black);
+    width: 100%;
+    gap: 1rem;
+    text-align: left;
+    padding: var(--container-padding);
+    
+    div, div > * {
+        width: inherit;
+        border-radius: 0.2em;
+    }
+
+    input, textarea, button {
+        border: none;
+        outline: none;
+    }
+    input, textarea {
+        padding-left: 0.3em;
+    }
+    input, button {
+        height: 1.5em;
+    }
+    textarea {
+        resize: vertical;
+    }
+
+    div > *:focus {
+        outline: 3px solid #005fcc; /* High-contrast theme color */
+    }
+
+    button {
+        height: 3em;
+    }
 }
