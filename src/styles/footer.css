@@ -1,6 +1,6 @@
 footer {
     background-color: var(--background-red);
-
+    padding: var(--container-padding);;
     width: 100%;
     height: 100%;
 }
@@ -9,15 +9,25 @@ footer, .contact-form, .contact-form div {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+}
+footer {
+    align-items: center;
+    gap: 1rem;
+    /* Remove the margin so gap can handle spacing */
+    h2 {
+        margin-bottom: 0;
+    }
+}
+.contact-form, .contact-form div {
+    /* Keep form elements to the left no matter what */
     align-items: start;
 }
 
 .contact-form {
-    background-color: var(--transparent-black);
-    width: 100%;
+    /* 28.125rem is about 450px */
+    width: min(100%, 28.125rem);
     gap: 1rem;
     text-align: left;
-    padding: var(--container-padding);
     
     div, div > * {
         width: inherit;
