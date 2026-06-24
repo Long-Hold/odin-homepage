@@ -37,22 +37,23 @@ footer {
     input, textarea, button {
         border: none;
         outline: none;
+        background-color: var(--background-dark-grey);
+        color: white;
     }
     input, textarea {
         padding-left: 0.3em;
     }
-    input, button {
+    input {
         height: 1.5em;
     }
     textarea {
         resize: vertical;
     }
-
-    div > *:focus {
-        outline: 3px solid #005fcc; /* High-contrast theme color */
-    }
-
     button {
         height: 3em;
+    }
+    label, button {
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
     }
 }
