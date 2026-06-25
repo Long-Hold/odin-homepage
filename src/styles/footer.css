@@ -56,4 +56,20 @@ footer {
         font-size: 0.8rem;
         letter-spacing: 0.1em;
     }
+
+    /* Focus styling */
+    input, textarea, button {
+        &:focus-visible {
+            outline: 2px solid rgba(255, 255, 255, 0.75);
+            outline-offset: 2px;
+        }
+    }
+
+    /* Button hovering */
+    button {
+        transition: background-color 0.2s ease;
+    }
+    button:hover {
+        background-color: color-mix(in srgb, rgb(40 40 40), #fff 15%);
+    }
 }
