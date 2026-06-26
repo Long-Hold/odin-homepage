@@ -69,7 +69,14 @@ footer {
     button {
         transition: background-color 0.2s ease;
     }
-    button:hover {
-        background-color: color-mix(in srgb, rgb(40 40 40), #fff 15%);
+    /* Fixes the sticky hover state on mobile devices */
+    @media (hover: hover) {
+        button:hover {
+            background-color: color-mix(in srgb, var(--background-dark-grey), #fff 15%);
+            cursor: pointer;
+        }
+    }
+    button:active, button:focus-visible {
+        background-color: color-mix(in srgb, var(--background-dark-grey), black 15%);
     }
 }
