@@ -44,7 +44,7 @@ footer {
         padding-left: 0.3em;
     }
     input {
-        height: 1.5em;
+        height: 2em;
     }
     textarea {
         resize: vertical;
@@ -55,6 +55,13 @@ footer {
     label, button {
         font-size: 0.8rem;
         letter-spacing: 0.1em;
+    }
+
+    /* Placeholder text contrast */
+    input, textarea {
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5)
+        }
     }
 
     /* Focus styling */
