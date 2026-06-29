@@ -34,49 +34,43 @@ footer {
         border-radius: 0.2em;
     }
 
+    /* Default styling + nested focus styling */
     input, textarea, button {
         border: none;
-        outline: none;
         background-color: var(--background-dark-grey);
         color: white;
+
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        transition: outline-color 0.2s ease-out;
+
+        &:focus-visible {
+            outline-color: rgba(255, 255, 255, 0.75);;
+        }
     }
+
+    /* Shared padding + nested placeholder styling */
     input, textarea {
         padding-left: 0.3em;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5)
+        }
     }
+    
     input {
         height: 2em;
     }
     textarea {
         resize: vertical;
     }
-    button {
-        height: 3em;
-    }
     label, button {
         font-size: 0.8rem;
         letter-spacing: 0.1em;
     }
 
-    /* Placeholder text contrast */
-    input, textarea {
-        &::placeholder {
-            color: rgba(255, 255, 255, 0.5)
-        }
-    }
-
-    /* Focus styling */
-    input, textarea, button {
-        outline-color: transparent;
-        transition: outline-color 0.2s ease-out;
-
-        &:focus-visible {
-            outline: 2px solid rgba(255, 255, 255, 0.75);
-            outline-offset: 2px;
-        }
-    }
-
-    /* Button hovering */
+    /* Button styling + hovering behaviour */
     button {
+        height: 3em;
         transition: background-color 0.2s ease;
     }
     /* Fixes the sticky hover state on mobile devices */
