@@ -248,9 +248,8 @@ body {
   display: flex;
   flex-flow: column nowrap;
   gap: 4rem;
-}
-@media screen and (width < 48rem){
-  body > * {
+  
+  > * {
     /* header portrait is 300px wide on mobile.
     The smallest likely viewport is 320px wide.
 
@@ -258,6 +257,11 @@ body {
     this keeps content from touching the edges while providing enough room
     for the portrait to expand. */
     padding: 0.625rem;
+  }
+}
+@media screen and (width >= 48rem){
+  header, main, footer {
+    padding: var(--container-padding);
   }
 }
 
