@@ -28,6 +28,11 @@ footer {
     width: min(100%, 28.125rem);
     gap: 1rem;
     text-align: left;
+
+    .form-disclaimer {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.75);
+    }
     
     div, div > * {
         width: inherit;
@@ -45,7 +50,7 @@ footer {
         transition: outline-color 0.2s ease-out;
 
         &:focus-visible {
-            outline-color: rgba(255, 255, 255, 0.75);;
+            outline-color: rgba(255, 255, 255, 0.75);
         }
     }
 
