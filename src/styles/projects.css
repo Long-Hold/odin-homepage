@@ -81,6 +81,9 @@ main, .projects-section {
 /* Fade up animations */
 @media (prefers-reduced-motion: no-preference) {
     .project-card {
-        animation: fadeUp 250ms ease-out backwards;
+        opacity: 0;
+    }
+    .project-card.begin-fade-up {
+        animation: fadeUp 250ms ease-out forwards;
     }
 }
