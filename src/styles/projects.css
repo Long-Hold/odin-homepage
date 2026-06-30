@@ -77,3 +77,10 @@ main, .projects-section {
         padding: 0;
     }
 }
+
+/* Fade up animations */
+@media (prefers-reduced-motion: no-preference) {
+    .project-card {
+        animation: fadeUp 250ms ease-out backwards;
+    }
+}
