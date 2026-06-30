@@ -114,3 +114,10 @@ the 300px or 500px dimensions of it's parent container now */
     justify-content: flex-end;
   }
 }
+
+/* Fade in animation, only if reduced-motion is turned off */
+@media (prefers-reduced-motion: no-preference) {
+  .portrait-container, #blurb-and-links {
+    animation: fadeUp 600ms ease-out backwards;
+  }
+}
