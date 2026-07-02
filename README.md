@@ -2,6 +2,10 @@
 
 A personal portfolio site built from scratch with vanilla JavaScript, CSS, and a webpack build pipeline. The site showcases a set of Odin Project exercises alongside an about-me section and a working contact form.
 
+## Live Demo
+
+[Live Demo](https://long-hold.github.io/odin-homepage/)
+
 ## Tech Stack
 
 - HTML5 (semantic markup)
