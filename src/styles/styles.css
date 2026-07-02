@@ -275,13 +275,35 @@ h1, h2, h3 {
   }
 }
 
-/* Special general-use class to make block-level svg's stack horizontally */
+/* 
+Special general-use class to make block-level svg's stack horizontally 
+
+Also sets default state of the svg children of any anchor elements to allow a
+visual cue when hovered or focused.
+*/
 .icon-links {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  a svg {
+    opacity: 0.8;
+    transition: opacity 200ms ease-out, transform 200ms ease-out;
+  }
+}
+
+@media (hover: hover) {
+  .icon-links a:hover svg {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.icon-links a:focus-visible svg {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* 
