@@ -41,6 +41,7 @@ Use a better box model (opinionated).
     src: url(d9aea1df7234878a5b64.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
