@@ -94,6 +94,6 @@ footer {
         opacity: 0;
     }
     .contact-form > *.begin-fade-up {
-        animation: fadeUp 250ms ease-out forwards;
+        animation: fadeUp 350ms ease-out forwards;
     }
 }

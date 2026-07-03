@@ -84,6 +84,6 @@ main, .projects-section {
         opacity: 0;
     }
     .project-card.begin-fade-up {
-        animation: fadeUp 250ms ease-out forwards;
+        animation: fadeUp 450ms ease-out forwards;
     }
 }
