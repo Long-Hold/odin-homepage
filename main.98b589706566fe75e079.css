@@ -548,7 +548,7 @@ main, .projects-section {
         opacity: 0;
     }
     .project-card.begin-fade-up {
-        animation: fadeUp 250ms ease-out forwards;
+        animation: fadeUp 450ms ease-out forwards;
     }
 }
 footer {
@@ -647,6 +647,6 @@ footer {
         opacity: 0;
     }
     .contact-form > *.begin-fade-up {
-        animation: fadeUp 250ms ease-out forwards;
+        animation: fadeUp 350ms ease-out forwards;
     }
 }
